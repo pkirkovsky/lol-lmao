@@ -1,0 +1,11 @@
+{
+  "name": "commit-invaders",
+  "version": "1.0.0",
+  "description": "Displays space invaders on the Github commit history section",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Carlos Wunsche",
+  "license": "ISC"
+}
