@@ -12,7 +12,11 @@ const initialDate = new Date(
   INIT_DATE_DAY - 1
 );
 
-const scriptContents = getContentString(initialDate, crab);
+const scriptContents = getContentString(
+  initialDate,
+  crab,
+  `Commiting ${crab.name}...`
+);
 
 fs.writeFileSync(`${__dirname}/script.sh`, scriptContents, 'utf8');
 
