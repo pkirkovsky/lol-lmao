@@ -19,8 +19,9 @@ exports.INIT_YEAR = 2021;
 exports.ALIEN_TYPE = 'squid';
 
 /* ------------------- BRIGHTNESS ------------------ */
-// 1 = Most bright
-// 2 = Medium brightness
-// 3 = Darkest
+// 2 = Super bright
+// 3 = Medium brightness 2
+// 5 = Medium brightness 1
+// 8 = Darkest
 
-exports.BRIGHTNESS = 2;
+exports.BRIGHTNESS = 1;
