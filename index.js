@@ -16,7 +16,7 @@ const scriptContents = getContentString(initialDate, crab);
 
 fs.writeFileSync(`${__dirname}/script.sh`, scriptContents, 'utf8');
 
-function getContentString(dateObj, alien) {
+function getContentString(dateObj, alien, commitMessage = 'Invaders') {
   let string = '';
   let date = dateObj;
 
@@ -24,9 +24,7 @@ function getContentString(dateObj, alien) {
     date = new Date(date.setDate(date.getDate() + 1));
     if (!el) return;
 
-    string += `git commit --date="${date.toDateString()}" -m "Commit Invaders: ${
-      alien.name
-    }" \n`;
+    string += `git commit --date="${date.toDateString()}" -m "${commitMessage}" \n`;
   });
   return string;
 }
