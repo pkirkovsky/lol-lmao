@@ -9,14 +9,14 @@
 //
 // Year should be a 4 digit number, i.e 2023
 
-exports.INIT_MONTH = 4;
-exports.INIT_DAY = 4;
-exports.INIT_YEAR = 2021;
+exports.INIT_MONTH = 7;
+exports.INIT_DAY = 31;
+exports.INIT_YEAR = 2022;
 
 /* ------------------ ALIEN TYPE ------------------- */
 // Choose between: squid - crab - octopus
 
-exports.ALIEN_TYPE = 'squid';
+exports.ALIEN_TYPE = 'crab';
 
 /* ------------------- BRIGHTNESS ------------------ */
 // 2 = Super bright
@@ -24,4 +24,4 @@ exports.ALIEN_TYPE = 'squid';
 // 5 = Medium brightness 1
 // 8 = Darkest
 
-exports.BRIGHTNESS = 1;
+exports.BRIGHTNESS = 5;
