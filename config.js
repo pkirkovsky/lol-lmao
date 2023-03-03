@@ -9,6 +9,6 @@
  * 2023
  */
 
-exports.INIT_DATE_MONTH = 1;
-exports.INIT_DATE_DAY = 3;
-exports.INIT_DATE_YEAR = 2021;
+exports.INIT_MONTH = 1;
+exports.INIT_DAY = 3;
+exports.INIT_YEAR = 2021;
