@@ -18,6 +18,10 @@ const scriptContents = getContentString(
   `Commiting ${crab.name}...`
 );
 
+// Reset commit history file
+fs.writeFileSync(`${__dirname}/commit-history.md`, '', 'utf8');
+
+// Write contents to script file
 fs.writeFileSync(`${__dirname}/script.sh`, scriptContents, 'utf8');
 
 function getContentString(dateObj, alien, commitMessage = 'Invaders') {
@@ -28,6 +32,8 @@ function getContentString(dateObj, alien, commitMessage = 'Invaders') {
     date = new Date(date.setDate(date.getDate() + 1));
     if (!el) return;
 
+    string += `echo 'A commit was made on this date: ${date.toDateString()}' >> commit-history.md \n`;
+    string += `git add commit-history.md\n`;
     string += `git commit --date="${date.toDateString()}" -m "${commitMessage}" \n`;
   });
   return string;
